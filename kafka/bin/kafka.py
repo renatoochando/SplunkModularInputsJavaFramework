@@ -74,7 +74,7 @@ def run_java():
       
       SPLUNK_HOME = os.path.expandvars('$SPLUNK_HOME')
       MODINPUT_HOME = SPLUNK_HOME + "/etc/apps/"+MODINPUT_NAME+"_ta/"
-      CLASSPATH = MODINPUT_HOME + "bin/lib/*"
+      CLASSPATH = MODINPUT_HOME + "bin/lib_openbus/*"
     elif sys.platform == 'win32':
         
       if (not os.environ.has_key('JAVA_HOME')):
